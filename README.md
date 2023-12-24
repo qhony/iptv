@@ -1,23 +1,22 @@
 # IPTV_analysis
 
-#### 介绍
-把开源搜集到的 IPTV 源文件，或许有效的链接，并转成群晖 IPTV 管理系统能直接识别的频道，输出到新的 M3U 文件中。
+#### Description
+This project collects open-source IPTV source files or possibly valid links, and converts them into channels recognizable by the Synology IPTV Management System, outputting to a new M3U file.
 
-#### 软件架构
-该软件使用 Python 3 环境运行，个人版本 Python 3.11.4，如运行有问题请参考相关版本的变化。
+#### Software Architecture
+The software runs in a Python 3 environment. The personal version used in Python 3.11.4. If there are any issues with running the program, please refer to the changes in the relevant version.
 
+#### Installation
 
-#### 安装教程
+1.  Install the Python 3.11 runtime environment.
+2.  The code execution requires libraries such as `requests`, `random`, `time`, `re`. Therefore, before running the program, execute the following command to install the libraries: `pip install requests`.
 
-1.  安装 Python 3.11 运行环境。
-2.  代码运行需要 `requests` 、`random` 、`time` 、`re`，因此在运行之前，应该执行 `pip` 命进行库的安装:```pip install requests```。
+#### Instructions
 
-#### 使用说明
+1.  Prepare the  `ipty.py` file and the original M3U file in the current directory where the code is stored.
+2.  Run directly: `python ipty.py`.
+3.  If the program runs for a long time without further execution, please close it and collect the generated M3U file in the current directory.
 
-1.  在代码存放的当前目录，准备好原始 `ipty.py` 文件，以及原始的 `M3U` 文件。
-2.  直接运行即可：``` python ipty.py ```。
-3.  如果程序运行长时间不再执行，请直接关闭并收集当前目录下，新生产的 `M3U` 文件即可。
+#### Contribution
 
-#### 参与贡献
-
-1.  无
+1.  None.
